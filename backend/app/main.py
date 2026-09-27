@@ -14,7 +14,7 @@ app = FastAPI(title="Oil Spill Investigation Platform API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[settings.cors_allowed_origin],
+    allow_origins=[settings.cors_allowed_origin,"https://sih26-peach.vercel.app",],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
